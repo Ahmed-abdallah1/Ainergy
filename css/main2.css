@@ -1,0 +1,625 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+.container {
+    width: 100%;
+}
+
+.container .nav {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    z-index: 100000;
+    box-shadow: 0px 0px 10px black;
+    background-color: white;
+}
+
+.toglar i {
+    display: none;
+}
+
+.container .nav ul {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    align-items: center;
+    display: flex;
+}
+
+.container .nav ul li {
+    padding: 15px;
+    list-style: none;
+    text-align: right;
+}
+
+.container .nav ul li a {
+    text-decoration: none;
+    color: #222;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.container .nav ul li a:hover {
+    color: #ed893d;
+}
+
+.container .nav .logo1 {
+    margin-right: 100px;
+    margin-top: -5px;
+}
+
+.container .nav .logo1 a {
+    text-decoration: none;
+    color: #555;
+    font-size: 28px;
+    font-weight: 550;
+    margin-left: 50px;
+}
+
+.container .nav .logo1 a span {
+    color: #ed893d;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.container .nav .logo1 li {
+    padding: 20px;
+    list-style: none;
+}
+
+.container .nav ul li a span {
+    color: rgb(212, 18, 18);
+}
+
+.signin {
+    padding-top: 180px;
+}
+
+.signin .head {
+    background-color: #d2d1d1;
+    width: 55%;
+    padding: 7px 0px 7px;
+    margin: auto;
+    border: 2px solid rgb(23, 22, 22);
+    border-top: 2px solid rgb(23, 22, 22);
+    border-radius: 5px 5px 0px 0px;
+    text-align: center;
+}
+
+.signin .head h2 {
+    font-size: 20px;
+}
+
+.signin .login {
+    width: 55%;
+    height: 250px;
+    margin: auto;
+    border: 2px solid #555;
+    border-top-color: transparent;
+    margin-top: -1px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.signin .login .box {
+    margin: 10px auto auto;
+}
+
+.signin .login .box label {
+    margin-right: 5px !important;
+}
+
+.spec-box {
+    margin-left: 30px !important;
+}
+
+.signin .login .box input {
+    padding: 8px 100px;
+    border-radius: 5px;
+    color: #555;
+    border: 1px solid #888;
+}
+
+.login .check {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.login .check input {
+    margin-right: 15px;
+}
+
+.signin .login .check h2 {
+    font-size: 15px;
+}
+
+.signin .login .check input {
+    width: 15px;
+    margin-left: 0px;
+}
+
+.signin .login .last {
+    display: flex;
+    justify-content: center;
+    margin-left: 150px;
+    margin-top: 25px;
+}
+
+.signin .login .last button {
+    margin-right: 20px;
+    padding: 10px 30px;
+    font-size: 14px;
+    background-color: #ed893d;
+    border-radius: 20px;
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+    border: 1px solid #ed893d;
+}
+
+.signin .login button:hover {
+    background-color: white;
+    color: #ed893d;
+}
+
+.signin .login .last p {
+    margin-top: 13px;
+    font-size: 12px;
+
+}
+
+.signin .login .last p a {
+    text-decoration: none;
+    color: blue;
+}
+
+.signin .login .last p :hover {
+    color: black;
+}
+
+.footer {
+    width: 100%;
+    padding: 10px 0px;
+    position: absolute;
+    bottom: 0;
+    height: auto;
+    background-color: #ffffff;
+    border-top: 1px solid black;
+    text-align: center;
+    background-color: #eee;
+}
+
+.footer .last {
+    font-size: 14px;
+    width: 80%;
+    margin: auto;
+}
+
+.footer .last h4 {
+    margin-top: 5px;
+}
+
+.footer .last a {
+    text-decoration: none;
+    color: rgb(96, 130, 96);
+    font-weight: 100;
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .toglar i {
+        display: none;
+    }
+
+    .container .nav {
+        justify-content: space-between;
+    }
+
+    .container .nav .logo1 {
+        margin: auto auto auto -15px;
+    }
+
+    .container .nav ul {
+        margin-right: 20px;
+    }
+
+    .container .nav ul li {
+        padding: 8px;
+        margin-top: 8px;
+    }
+
+    .check h2 {
+        margin-top: 9px;
+    }
+
+    .signin .login {
+        height: auto;
+        padding-bottom: 20px;
+    }
+
+    .signin .login input {
+        margin-top: 10px;
+    }
+
+    .spec-box {
+        margin-left: 0px !important;
+    }
+
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+    .container .nav {
+        top: 0;
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .container .nav .logo1 a {
+        padding-left: 0px;
+    }
+
+    .container .nav .logo1 {
+        margin-left: -50px;
+        margin-top: 0px;
+        padding-left: 10px;
+    }
+
+    .container .nav ul {
+        display: none;
+    }
+
+    .toglar i {
+        display: block;
+        color: black;
+        padding-top: 30px;
+        position: absolute;
+        right: 0px;
+    }
+
+    .container {
+        margin-left: 0px;
+        padding-top: 80px;
+    }
+
+    .signin {
+        padding-top: 50px;
+    }
+
+    .signin .head {
+        background-color: #d2d1d1;
+        width: 95%;
+        margin: auto;
+        padding: 7px 0px 7px;
+    }
+
+    .signin .head h2 {
+        font-size: 18px;
+    }
+
+    .signin .login {
+        width: 95%;
+        height: auto;
+        padding: 20px 0px 20px;
+        margin: auto;
+    }
+
+    .signin .login .box label {
+        margin-right: 0px !important;
+    }
+
+    .spec-box {
+        margin-left: 0px !important;
+    }
+
+    .signin .login .box input {
+        padding: 8px 90px;
+        border-radius: 5px;
+        color: #555;
+        border: 1px solid #888;
+        margin-top: 8px;
+        margin-bottom: 5px;
+    }
+
+    .login .check {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .login .check input {
+        margin-right: 15px;
+    }
+
+    .signin .login .check h2 {
+        font-size: 15px;
+    }
+
+    .signin .login .check input {
+        width: 15px;
+        margin-left: 0px;
+    }
+
+    .signin .login .last {
+        display: flex;
+        justify-content: center;
+        margin-left: 150px;
+        margin-top: 25px;
+    }
+
+    .signin .login .last button {
+        margin-right: 20px;
+        padding: 10px 30px;
+        font-size: 14px;
+        background-color: #ed893d;
+        border-radius: 20px;
+        border: 1px solid white;
+        color: white;
+        cursor: pointer;
+        border: 1px solid #ed893d;
+    }
+
+    .signin .login button:hover {
+        background-color: white;
+        color: #ed893d;
+    }
+
+    .signin .login .last p {
+        margin-top: 6px;
+        font-size: 12px;
+    }
+
+    .signin .login .last p a {
+        text-decoration: none;
+        color: blue;
+    }
+
+    .signin .login .last p :hover {
+        color: black;
+    }
+
+    .footer {
+        width: 100%;
+        margin-top: 175px;
+        text-align: center;
+    }
+
+    .footer .last {
+        font-size: 12px;
+        width: 90%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer .last h4 {
+        margin-top: -0px;
+    }
+
+    .footer .last a {
+        text-decoration: none;
+        color: rgb(96, 130, 96);
+        font-weight: 100;
+    }
+}
+
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .container {
+        width: 100%;
+    }
+
+    .container .nav {
+        width: 100%;
+        height: 70px;
+        display: flex;
+        justify-content: space-around;
+        position: fixed;
+        z-index: 100000;
+        box-shadow: 0px 0px 10px black;
+        background-color: white;
+    }
+
+    .toglar i {
+        display: none;
+    }
+
+    .container .nav ul {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        align-items: center;
+        display: flex;
+    }
+
+    .container .nav ul li {
+        padding: 15px;
+        list-style: none;
+        text-align: right;
+    }
+
+    .container .nav ul li a {
+        text-decoration: none;
+        color: #222;
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+    .container .nav ul li a:hover {
+        color: #ed893d;
+    }
+
+    .container .nav .logo1 {
+        margin-right: 100px;
+        margin-top: -5px;
+    }
+
+    .container .nav .logo1 a {
+        text-decoration: none;
+        color: #555;
+        font-size: 28px;
+        font-weight: 550;
+        margin-left: 50px;
+    }
+
+    .container .nav .logo1 a span {
+        color: #ed893d;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .container .nav .logo1 li {
+        padding: 20px;
+        list-style: none;
+    }
+
+    .container .nav ul li a span {
+        color: rgb(212, 18, 18);
+    }
+
+    .signin {
+        padding-top: 180px;
+    }
+
+    .signin .head {
+        background-color: #d2d1d1;
+        width: 55%;
+        padding: 7px 0px 7px;
+        margin: auto;
+        border: 2px solid rgb(23, 22, 22);
+        border-top: 2px solid rgb(23, 22, 22);
+        border-radius: 5px 5px 0px 0px;
+        text-align: center;
+    }
+
+    .signin .head h2 {
+        font-size: 20px;
+    }
+
+    .signin .login {
+        width: 55%;
+        height: 250px;
+        margin: auto;
+        border: 2px solid #555;
+        border-top-color: transparent;
+        margin-top: -1px;
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    .signin .login .box {
+        margin: 10px auto auto;
+    }
+
+    .signin .login .box label {
+        margin-right: 5px !important;
+    }
+
+    .spec-box {
+        margin-left: 30px !important;
+    }
+
+    .signin .login .box input {
+        padding: 8px 100px;
+        border-radius: 5px;
+        color: #555;
+        border: 1px solid #888;
+    }
+
+    .login .check {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .login .check input {
+        margin-right: 15px;
+    }
+
+    .signin .login .check h2 {
+        font-size: 15px;
+    }
+
+    .signin .login .check input {
+        width: 15px;
+        margin-left: 0px;
+    }
+
+    .signin .login .last {
+        display: flex;
+        justify-content: center;
+        margin-left: 150px;
+        margin-top: 25px;
+    }
+
+    .signin .login .last button {
+        margin-right: 20px;
+        padding: 10px 30px;
+        font-size: 14px;
+        background-color: #ed893d;
+        border-radius: 20px;
+        border: 1px solid white;
+        color: white;
+        cursor: pointer;
+        border: 1px solid #ed893d;
+    }
+
+    .signin .login button:hover {
+        background-color: white;
+        color: #ed893d;
+    }
+
+    .signin .login .last p {
+        margin-top: 13px;
+        font-size: 12px;
+
+    }
+
+    .signin .login .last p a {
+        text-decoration: none;
+        color: blue;
+    }
+
+    .signin .login .last p :hover {
+        color: black;
+    }
+
+    .footer {
+        width: 100%;
+        padding: 10px 0px;
+        position: absolute;
+        bottom: 0;
+        height: auto;
+        background-color: #ffffff;
+        border-top: 1px solid black;
+        text-align: center;
+        background-color: #eee;
+    }
+
+    .footer .last {
+        font-size: 14px;
+        width: 80%;
+        margin: auto;
+    }
+
+    .footer .last h4 {
+        margin-top: 5px;
+    }
+
+    .footer .last a {
+        text-decoration: none;
+        color: rgb(96, 130, 96);
+        font-weight: 100;
+    }
+}
